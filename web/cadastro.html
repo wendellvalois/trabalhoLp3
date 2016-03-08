@@ -6,23 +6,67 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Cadastro Aluno</title>
+        <title>Cantinas Juquinha</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <style>
+            body{
+                background-color: navajowhite;
+            }
+            
+            header{
+                background-color: beige;
+                padding: 10px ;
+                margin: 10px;
+            }
+            header img,h1{
+                display:inline-block;
+                vertical-align: middle;
+            }
+            section{
+                margin: 10px;
+                padding: 30px;
+                background-color: beige;
+            }
+            .login{
+                float: right;               
+            }
+        </style>
+        <header>
+            
+                <img src="images/logo.png" height="100" alt="logo"> 
+                <h1 style="font-family:fantasy ">Cantinas Juquinha</h1>
+            
+                <form class="login" action="">
+                    <table >
+                        <tr><td><b>login:</b></td></tr>
+                        <tr><td>usuário:</td><td><input type="text"></td></tr>
+                        <tr><td>senha:</td><td><input type="password"></td></tr>
+                        <tr><td><input type="submit"></td></tr>
+                    </table>
+                </form>
+            </header>
+        <section>
        
-        <form action="" method="post">
+        <form action="teste.jsp" method="post">
             <fieldset>
                 <legend>Cadastro de Aluno</legend>
-                <ul>
-                    <li>
-                        <label for="nome">Aluno:</label><input type="text" name="nome">
-                    </li>
-                </ul>
                 
+                <table>                        
+                    <tr><td>Aluno:</td><td><input type="text" name="nome"></td></tr>
+                        <tr><td>Turno:</td><td>
+                            <select name="turno">
+                                <option value="Matutino">Matutino</option>
+                                <option value="Vespertino">Vespertino</option>
+                            </select>
+                        </tr>
+                    
+                    <tr><td><input type="submit"></td></tr>
+                    
+                </table>     
             </fieldset>
-            
         </form>
     </body>
 </html>
