@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cantinas Juquinha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
+    </head>
+    <body>
+
+        <header>
+
+            <img src="../images/logo.png" height="100" alt="logo"> 
+            <h1 style="font-family:fantasy ">Cantinas Juquinha</h1>
+
+            <form class="login" action="">
+                <table >
+                    <tr><td><b>login:</b></td></tr>
+                    <tr><td>usuário:</td><td><input type="text"></td></tr>
+                    <tr><td>senha:</td><td><input type="password"></td></tr>
+                    <tr><td><input type="submit"></td></tr>
+                </table>
+            </form>
+        </header>
+
+        <section>       
+            <form action="cadastroAlunoConf.jsp" method="post">
+                <fieldset>
+                    <legend>Cadastro de Aluno</legend>
+
+                    <table>                        
+                        <tr><td>Aluno:</td><td><input type="text" name="nome"></td></tr>
+                        <tr><td>Turno:</td><td>
+                                <select name="turno">
+                                    <option value="Matutino">Matutino</option>
+                                    <option value="Vespertino">Vespertino</option>
+                                </select>
+                        <tr>
+                            <td>Login de usuário:</td>
+                            <td><input type="text" name="novologin"></td>
+                        
+                        </tr>                          
+                        <tr>
+                            <td>Senha:</td>
+                            <td><input type="password" name="novasenha"></td>
+                        </tr>
+                        <tr>
+                            <td>Confirmação de senha</td>
+                            <td><input type="password" name="confimasenha"></td>
+                        </tr>
+                        <tr>
+                        </tr>
+
+                        <tr><td><input type="submit"></td></tr>
+
+                    </table>     
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
