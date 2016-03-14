@@ -48,7 +48,11 @@
 
                 <li><a href="#" >Crédito de Aluno</a>
                     <ol>
-                        <li><a href="#">Depositar crédito para aluno</a></li>
+                        <li>
+                            <a href="depositarCreditoAluno.html">
+                                Depositar crédito para aluno
+                            </a>
+                        </li>
                         <li><a href="#">Consultar Saldo de aluno</a></li>
                         <li><a href="#">Bloquear Consumo de aluno</a></li>
                         <li><a href="#">Consultar Consumo de aluno</a></li>
@@ -64,7 +68,7 @@
 
 
             <%
-                String nome = request.getParameter("nome");
+                String nome = request.getParameter("aluno");
                 String turno = request.getParameter("turno");
 
             %>
