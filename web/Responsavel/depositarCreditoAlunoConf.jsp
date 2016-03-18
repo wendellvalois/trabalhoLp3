@@ -1,17 +1,19 @@
+<%-- 
+    Document   : depositarCreditoAlunoConf
+    Created on : 18/03/2016, 09:05:31
+    Author     : Danilo
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cantinas Juquinha</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../estiloprincipal.css">
-        <script src="../validacaoFormularios.js" type="text/javascript"></script>
     </head>
+
+
     <body>
 
         <header>
@@ -27,18 +29,18 @@ and open the template in the editor.
                     <tr><td><input type="submit"></td></tr>
                 </table>
             </form>
-
-
         </header>
+
         <nav id="nav">
             <ul>
 
                 <li><a href="paginainicial.html">Home</a></li>
 
 
-                <li><a href="#about">Sobre</a></li>
+
             </ul>
         </nav>
+
         <div id="nav-left">
             <ul>
 
@@ -60,27 +62,17 @@ and open the template in the editor.
             </ul>
         </div>
 
-        <section style="margin-left:25%;height:1000px;">
+        <section>
+            <h1>Operação bem sucedida!</h1>
 
-            <form onsubmit="return CriticaFormulario()" action="depositarCreditoAlunoConf.jsp" method="post">
-                <fieldset>
-                    <legend>Cadastro de Aluno</legend>
 
-                    <table>                        
-                        <tr>
-                            <td>Matricula do Aluno:</td>
-                            <td><input type="text" name="nome"></td>
-                        </tr>
-                        <tr>
-                            <td>Quantia em dinheiro:</td>
-                            <td><input type="text" name="dinheiro"></td>
-                        </tr>
-                        <tr><td><input type="submit" value="enviar"></td></tr>
 
-                    </table>     
-                </fieldset>
-            </form>
+            <%
+                String nome = request.getParameter("aluno");
+                String credito = request.getParameter("credito");
 
+            %>
+            <p>O aluno <%=nome%> possui R$ <%=credito%> creditado em sua conta.</p>
         </section>
     </body>
 </html>
