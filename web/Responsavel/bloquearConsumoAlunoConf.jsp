@@ -44,11 +44,20 @@
         <div id="nav-left">
             <ul>
 
-                <li><a href="comprarAluno.html">Comprar Produtos</a></li>
+                <li><a href="cadastroAluno.html">Cadastrar Aluno</a></li>
 
-                <li><a href="consultarSaldoAlunoAluno.html" >Consultar Saldo</a></li>
-                    
-                
+                <li><a href="#" >Crédito de Aluno</a>
+                    <ol>
+                        <li>
+                            <a href="depositarCreditoAluno.html">
+                                Depositar crédito para aluno
+                            </a>
+                        </li>
+                        <li><a href="#">Consultar Saldo de aluno</a></li>
+                        <li><a href="#">Bloquear Consumo de aluno</a></li>
+                        <li><a href="#">Consultar Consumo de aluno</a></li>
+                    </ol>
+                </li>
                 <li><a href="#about">Sobre</a></li>
             </ul>
         </div>
