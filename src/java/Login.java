@@ -19,7 +19,10 @@ public class Login extends HttpServlet {
             response.sendRedirect("Responsavel/paginainicial.html");
         } else if (usuario.equals("funcionario") && senha.equals("123")) {
             response.sendRedirect("/Funcionario/paginainicial.html");
-        } else {
+        } else if (usuario.equals("aluno") && senha.equals("123")) {
+            response.sendRedirect("/Aluno/paginainicial.html");
+        } else
+            {
             out.println("<script type=\"text/javascript\">");
             out.println("alert('Usuário ou senha incorreta');");
  //           out.println("location='index.html';"); // reload de pagina
