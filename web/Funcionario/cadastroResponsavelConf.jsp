@@ -19,14 +19,27 @@
             <img src="../images/logo.png" height="100" alt="logo"> 
             <h1 style="font-family:fantasy ">Cantinas Juquinha</h1>
 
-            <form class="login" action="">
-                <table >
-                    <tr><td><b>login:</b></td></tr>
-                    <tr><td>usuário:</td><td><input type="text"></td></tr>
-                    <tr><td>senha:</td><td><input type="password"></td></tr>
-                    <tr><td><input type="submit"></td></tr>
-                </table>
-            </form>
+
+            <img src="../images/logo.png" height="100" alt="logo"> 
+            <h1 style="font-family:fantasy ">Cantinas Juquinha</h1>
+
+        </header>
+        <nav id="nav">
+            <ul>
+
+                <li><a href="paginainicial.html">Home</a></li>
+            </ul>
+        </nav>
+        <div id="nav-left">
+            <ul>
+
+                <li><a href="">Manter Produto</a></li>
+                <li><a href="">Manter Aluno</a></li>
+                <li><a href="cadastraResponsavel.html">Cadastrar Responsável</a></li>
+                <li><a href="consultarSaldoAluno.html">Consultar Saldo de Aluno</a></li>
+
+            </ul>
+        </div>
         </header>
         <section>
             <h1>Operação bem sucedida!</h1>
