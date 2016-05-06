@@ -5,13 +5,13 @@
  */
 
 
-function CriticaFormulario (){
+function CriticaFormulario(){
  var retorno=true;
  var tamanho;   
 tamanho = document.forms["formulario"].elements.length;
 for (i=0;i<=(tamanho-2);i++){
    if (document.forms["formulario"].elements[i].value===""){
-         window.alert(" O campo " + document.forms["cad"].elements[i].name + " é obrigatório");
+         window.alert(" O campo " + document.forms["formulario"].elements[i].name + " é obrigatório");
       retorno=false;
       break;
       }
