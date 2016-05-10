@@ -16,6 +16,7 @@ import br.com.cantinasjuquinha.util.DAOFactory;
 public class Teste {
 
     public static void main(String[] args) {
+        /*
         Responsavel responsavel = new Responsavel();
         responsavel.setNome("Angelo");
         responsavel.setCpf("1232");
@@ -24,9 +25,11 @@ public class Teste {
         responsavel.setEndereco("Rua ha");
        // responsavel.setLogin("angeloluis");
         //responsavel.setSenha("123456");
+                */
         
         ResponsavelDAO rd = DAOFactory.createResponsavelDAO();
-        rd.inserir(responsavel);
+        //rd.inserir(responsavel);
+         System.out.println(rd.listar());
     }
 
 }

@@ -80,8 +80,12 @@ public class JDBCResponsavelDAO implements ResponsavelDAO {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Responsavel responsavel = new Responsavel();
-                responsavel.setNome(rs.getString("nome"));
-                responsavel.setEndereco(rs.getString("bairro"));
+                responsavel.setCpf(rs.getString("cpfresponsavel"));
+                responsavel.setNome(rs.getString("nomeresponsavel"));
+                responsavel.setTelefone(rs.getString("telefoneresponsavel"));
+                responsavel.setEmail(rs.getString("emailresponsavel"));
+                responsavel.setEndereco(rs.getString("enderecoresponsavel"));
+                
                 //responsavel.getEndereco()setRua(rs.getString("rua")); // com Endereco composto de vario valores
                 responsaveis.add(responsavel);
 
